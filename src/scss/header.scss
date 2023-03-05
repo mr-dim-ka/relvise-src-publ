@@ -68,8 +68,7 @@
 			overflow: auto;
 			padding: rem(90) rem(15) rem(30) rem(15);
 			transition: all 0.3s ease 0s;
-			background-color: rgba($blueColor, 0.2);
-			background-color: #ddd;
+			background-color: rgba($blueColor, 0.9);
 
 			.menu-open & {
 				left: 0;
@@ -111,6 +110,7 @@
 		letter-spacing: em(0.2, 14);
 		@media (max-width: $mobile) {
 			font-size: rem(25);
+			color: #fff;
 		}
 	}
 }
