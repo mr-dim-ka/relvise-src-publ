@@ -1,1 +1,24 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.header-block {
+	max-width: rem(864);
+	margin: 0 auto;
+	text-align: center;
+	// .header-block__title
+	&__title {
+		font-weight: 700;
+		@include adaptiveValue("font-size", 40, 30);
+		line-height: 1.4;
+		letter-spacing: em(0.2, 40);
+		color: $blueColor;
+		&:not(:last-child) {
+			margin-bottom: em(10, 40);
+		}
+	}
+	// .header-block__text
+	&__text {
+		font-weight: 500;
+		line-height: 1.4;
+		letter-spacing: em(0.2, 14);
+	}
+}

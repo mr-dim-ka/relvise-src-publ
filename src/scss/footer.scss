@@ -1,6 +1,6 @@
 //====================================================================================================
 .footer {
-	padding-top: 120px;
+	@include adaptiveValue("padding-top", 70, 0);
 	background-color: #fafafa;
 	// .footer__container
 	&__container {
