@@ -14,6 +14,11 @@
 		@include adaptiveValue("padding-top", 80, 40);
 		@include adaptiveValue("padding-bottom", 80, 40);
 	}
+	// .page__advice
+	&__advice {
+		@include adaptiveValue("padding-top", 125, 40);
+		@include adaptiveValue("padding-bottom", 80, 40);
+	}
 }
 
 //==========================================================================================================================
@@ -220,5 +225,69 @@
 		line-height: 1.4;
 		text-align: center;
 		letter-spacing: em(0.1, 16);
+	}
+}
+
+//==========================================================================================================================
+
+.advice {
+	background-color: #fafafa;
+	// .advice__container
+	&__container {
+	}
+	// .advice__header
+	&__header {
+		&:not(:last-child) {
+			margin-bottom: rem(50);
+		}
+	}
+	// .advice__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(rem(235), 1fr));
+		@include adaptiveValue("column-gap", 30, 15);
+		row-gap: rem(30);
+	}
+	// .advice__item
+	&__item {
+	}
+}
+.item-advice {
+	height: 100%;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transition: all 0.3s ease 0s;
+	// .item-advice__body
+	&__body {
+		@include adaptiveValue("padding", 30, 15);
+		flex: 1 1 auto;
+	}
+	// .item-advice__title
+	&__title {
+		font-weight: 700;
+		font-size: rem(16);
+		line-height: 1.5;
+		letter-spacing: em(0.1, 16);
+		color: $blueColor;
+		&:not(:last-child) {
+			margin-bottom: em(15, 16);
+		}
+	}
+	// .item-advice__text
+	&__text {
+		font-weight: 500;
+		line-height: 1.4;
+		letter-spacing: em(0.2, 14);
+		&:not(:last-child) {
+			margin-bottom: em(35, 14);
+		}
+	}
+	// .item-advice__image-ibg
+	&__image-ibg {
+		align-self: stretch;
+		padding-bottom: percent(138, 230);
 	}
 }
