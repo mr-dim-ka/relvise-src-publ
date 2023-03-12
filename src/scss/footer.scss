@@ -59,8 +59,14 @@
 		border-radius: 5px;
 		padding: rem(15) rem(40);
 		white-space: nowrap;
+		transition: all 0.3s ease 0s;
 		@media (max-width: $mobileSmall) {
 			width: 100%;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: darken($orangeColor, 10%);
+			}
 		}
 	}
 }

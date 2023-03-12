@@ -91,11 +91,22 @@
 		border-radius: 37px;
 		background-color: $orangeColor;
 		padding: rem(15) rem(35);
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: darken($orangeColor, 10%);
+			}
+		}
 		// .mainpage__btn_w
 		&_w {
 			background-color: transparent;
 			color: $greenColor;
 			border: 1px solid $greenColor;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: rgba($blueColor, 0.15);
+				}
+			}
 		}
 	}
 	// .mainpage__image-ibg
@@ -350,7 +361,7 @@
 		@media (any-hover: hover) {
 			&:hover {
 				&::before {
-					background-color: darken($greenColor, 5%);
+					background-color: darken($greenColor, 10%);
 				}
 			}
 		}
@@ -558,6 +569,12 @@
 		align-items: center;
 		border: 1px solid #e6e6e6;
 		border-radius: 0px 5px 5px 0px;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: darken($orangeColor, 10%);
+			}
+		}
 	}
 }
 
@@ -578,7 +595,8 @@
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
-		gap: rem(25);
+		column-gap: rem(30);
+		row-gap: rem(25);
 	}
 	// .get__item
 	&__item {
@@ -599,7 +617,7 @@
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: $blueColor;
-			transform: scale(1.15);
+			transform: scale(1.13);
 			& > * {
 				color: #fff;
 			}

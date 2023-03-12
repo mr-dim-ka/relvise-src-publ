@@ -108,9 +108,25 @@
 		font-weight: 600;
 		line-height: 1.7;
 		letter-spacing: em(0.2, 14);
+		transition: all 0.3s ease 0s;
+		border-bottom: 1px solid transparent;
 		@media (max-width: $mobile) {
 			font-size: rem(25);
 			color: #fff;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $blueColor;
+				border-bottom: 1px solid $blueColor;
+			}
+		}
+		@media (max-width: $mobile) {
+			font-size: rem(25);
+			color: #fff;
+			&:hover {
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
 		}
 	}
 }
