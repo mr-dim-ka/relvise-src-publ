@@ -511,7 +511,7 @@
 }
 .form-clients {
 	display: flex;
-	align-items: center;
+	// align-items: center;
 	// flex-wrap: wrap;
 	row-gap: rem(15);
 	// .form-clients__item
@@ -520,6 +520,15 @@
 		&_input {
 			flex: 1 1 auto;
 			// flex: 1 0 rem(250);
+			&._form-error {
+				.form-clients__input {
+					border: 2px solid red;
+				}
+				.form__error {
+					color: red;
+					margin-top: rem(5);
+				}
+			}
 		}
 	}
 	// .form-clients__input
