@@ -59,9 +59,6 @@
 		border-radius: 5px;
 		padding: rem(15) rem(40);
 		white-space: nowrap;
-		@media (max-width: $mobile) {
-			margin: 0 auto;
-		}
 		@media (max-width: $mobileSmall) {
 			width: 100%;
 		}
