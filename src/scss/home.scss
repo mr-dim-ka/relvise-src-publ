@@ -383,25 +383,14 @@
 	// item-who__content
 	&__content {
 	}
-	// .item-who__title
-	&__title {
-		font-weight: 700;
-		font-size: rem(40);
-		line-height: 1.4;
-		color: $blueColor;
+	// .item-who__header
+	&__header {
+		text-align: left;
 		&:not(:last-child) {
-			margin-bottom: em(10, 40);
+			margin-bottom: rem(50);
 		}
 	}
-	// .item-who__text
-	&__text {
-		font-weight: 500;
-		line-height: 1.4;
-		letter-spacing: em(0.2, 14);
-		&:not(:last-child) {
-			margin-bottom: em(50, 14);
-		}
-	}
+
 	// .item-who__points
 	&__points {
 		display: flex;
