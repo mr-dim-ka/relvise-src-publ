@@ -161,6 +161,13 @@
 		line-height: 1.7;
 		letter-spacing: em(0.2, 14);
 		color: #fff;
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: rgb(199, 197, 197);
+			}
+		}
 		&:not(:last-child) {
 			margin-bottom: em(10, 14);
 		}
@@ -213,6 +220,16 @@
 	}
 	// .social__link
 	&__link {
+		&::before {
+			transition: all 0.3s ease 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					transform: scale(1.1);
+				}
+			}
+		}
 		font-size: rem(25);
 		// .social__link_facebook
 		&_facebook {
